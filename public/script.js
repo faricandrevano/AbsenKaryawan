@@ -6,3 +6,12 @@ const modal = document.getElementById("modal");
    	document.getElementById('close').addEventListener('click',(e) => {
    		modal.classList.add('hidden');
    	})
+const bgLaoder = document.getElementById('loader');
+
+function setDisplay (Value) {
+	if(Value) {
+		bgLaoder.style.display = 'flex'
+	} else {
+		bgLaoder.style.display = 'none'
+	}
+}
